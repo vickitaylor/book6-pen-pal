@@ -1,0 +1,23 @@
+ul {
+    list-style-type: none;
+    padding-inline-start: 0.25rem;
+}
+
+.topic_list {
+  display: inline-block;  
+  
+}
+
+.topic_item{ 
+  display: inline-block;
+
+}
+
+.button {
+  margin: 1rem 0 2rem 2rem;
+  padding: 0.25rem;
+  background-color: #5F9EA0;
+  color: lightgoldenrodyellow;
+  font-size: 1rem;
+  border-radius: .5rem;
+}

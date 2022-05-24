@@ -1,0 +1,86 @@
+{
+  "authors": [
+    {
+      "id": 1,
+      "name": "Chester Duke",
+      "email": "chesterduke@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Lila Kane",
+      "email": "lilakane@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Damian Madison",
+      "email": "damianmadison@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Kelly Vale",
+      "email": "kellyvale@gmail.com"
+    }
+  ],
+  "recipients": [
+    {
+      "id": 1,
+      "name": "Danielle King",
+      "email": "danielleking@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Brian Austin",
+      "email": "brainaustin@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Liam Mars",
+      "email": "liammars@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Johnnie Webb",
+      "email": "johnniewebb@gmail.com"
+    }
+  ],
+  "topics": [
+    {
+      "id": 1,
+      "name": "Business"
+    },
+    {
+      "id": 2,
+      "name": "Friendly"
+    },
+    {
+      "id": 3,
+      "name": "Family"
+    },
+    {
+      "id": 4,
+      "name": "Congratulations"
+    },
+    {
+      "id": 5,
+      "name": "Condolences"
+    }
+  ],
+  "sentLetter": [
+    {
+      "authorId": 1,
+      "recipientId": 3,
+      "message": "Chocolate cake I love topping danish oat cake marzipan tootsie roll. Soufflé jelly-o gummi bears bear claw pie cheesecake. Oat cake I love danish gummies apple pie gummi bears.",
+      "topic": null,
+      "dateSent": 1653416202868,
+      "id": 1
+    },
+    {
+      "authorId": 4,
+      "recipientId": 4,
+      "message": "Sugar plum topping cake cake lollipop caramels ice cream. Tiramisu cheesecake chocolate jelly beans danish jelly beans. Toffee sweet roll marshmallow icing marshmallow donut. Biscuit pastry I love jujubes jelly chocolate cake pie I love.",
+      "topic": null,
+      "dateSent": 1653416273661,
+      "id": 2
+    }
+  ]
+}
