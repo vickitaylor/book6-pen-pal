@@ -69,15 +69,19 @@
     {
       "authorId": 1,
       "recipientId": 4,
-      "topicId": 1,
       "message": "Icing donut brownie apple pie dessert oat cake fruitcake marshmallow gummies. Macaroon lollipop tootsie roll jujubes toffee powder danish pie lemon drops. Fruitcake cake jujubes sugar plum jujubes wafer sugar plum sweet.\n",
       "dateSent": 1653417502127,
-      "id": 1
+      "topicId": [
+        1,
+        2
+      ]
     },
     {
       "authorId": 2,
       "recipientId": 3,
-      "topicId": 2,
+      "topicId": [
+        2
+      ],
       "message": "Cookie gummies halvah caramels chocolate marzipan chupa chups sweet sugar plum. Apple pie chocolate bar apple pie jelly-o lemon drops marshmallow tiramisu gummies. Gummi bears danish donut cake gingerbread toffee.",
       "dateSent": 1653417524853,
       "id": 2
@@ -85,7 +89,9 @@
     {
       "authorId": 3,
       "recipientId": 2,
-      "topicId": 4,
+      "topicId": [
+        4
+      ],
       "message": "Sugar plum topping cake cake lollipop caramels ice cream. Tiramisu cheesecake chocolate jelly beans danish jelly beans. Toffee sweet roll marshmallow icing marshmallow donut. Biscuit pastry I love jujubes jelly chocolate cake pie I love.",
       "dateSent": 1653417532863,
       "id": 3
@@ -93,10 +99,34 @@
     {
       "authorId": 4,
       "recipientId": 1,
-      "topicId": 5,
+      "topicId": [
+        5
+      ],
       "message": "Chocolate cake I love topping danish oat cake marzipan tootsie roll. Soufflé jelly-o gummi bears bear claw pie cheesecake. Oat cake I love danish gummies apple pie gummi bears.",
       "dateSent": 1653417539994,
       "id": 4
+    },
+    {
+      "authorId": 1,
+      "recipientId": 2,
+      "topicId": [
+        1,
+        2
+      ],
+      "message": "Wafer soufflé cake pudding chocolate cake muffin bonbon muffin. Gingerbread gummies caramels shortbread cookie pie brownie brownie. Tiramisu sweet pie cookie donut pastry.",
+      "dateSent": 1653424715215,
+      "id": 5
+    },
+    {
+      "authorId": 2,
+      "recipientId": 2,
+      "topicId": [
+        3,
+        4
+      ],
+      "message": "Halvah sesame snaps tiramisu danish icing donut chocolate cake liquorice. Pie topping dragée macaroon biscuit lemon drops. Pudding croissant bear claw icing chupa chups bonbon cotton candy.",
+      "dateSent": 1653426697662,
+      "id": 6
     }
   ]
 }

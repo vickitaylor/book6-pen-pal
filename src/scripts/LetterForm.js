@@ -31,7 +31,7 @@ export const Topics = () => {
 
     return ` <ul class="topic_list">
         ${topics.map((topic) => {
-            return `<l1 class="topic_item"><input type="radio" name="topic" value="${topic.id}" />${topic.name}
+            return `<l1 class="topic_item"><input type="checkbox" name="topic" value="${topic.id}" />${topic.name}
             </li>`
         }).join("")
         }
@@ -69,14 +69,17 @@ const mainContainer = document.querySelector("#container")
 mainContainer.addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "sendLetter") { 
         const selectedAuthor = document.querySelector("#author").value
-        const selectedTopic = document.querySelector("input[name='topic']:checked").value
-        const typedLetter = document.querySelector("#letterText").value
         const selectedRecipient = document.querySelector("#recipient").value
+        const selectedTopic = document.querySelectorAll("input[name='topic']:checked");
+            let outputTopic = [];
+            selectedTopic.forEach((topic) => {
+                outputTopic.push(parseInt(topic.value))})
+        const typedLetter = document.querySelector("#letterText").value
         
         const dataToSendToAPI = {
             authorId: parseInt(selectedAuthor),
             recipientId: parseInt(selectedRecipient),
-            topicId: parseInt(selectedTopic), 
+            topicId: outputTopic, 
             message: typedLetter, 
             dateSent: Date.now(),
         }
