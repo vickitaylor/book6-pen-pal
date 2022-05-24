@@ -59,28 +59,25 @@ export const LetterForm = () => {
 
         <h3>Recipient</h3>
         ${Recipients()}
-
     </article>
 
     <button class="button" id="sendLetter">Send Letter</button>`
 }
-
-
 
 const mainContainer = document.querySelector("#container")
 
 mainContainer.addEventListener("click", clickEvent => {
     if (clickEvent.target.id === "sendLetter") { 
         const selectedAuthor = document.querySelector("#author").value
+        const selectedTopic = document.querySelector("input[name='topic']:checked").value
         const typedLetter = document.querySelector("#letterText").value
-        const selectedTopic = document.querySelectorAll("input[name='topic']:checked").value
         const selectedRecipient = document.querySelector("#recipient").value
         
         const dataToSendToAPI = {
             authorId: parseInt(selectedAuthor),
             recipientId: parseInt(selectedRecipient),
+            topicId: parseInt(selectedTopic), 
             message: typedLetter, 
-            topic: parseInt(selectedTopic), 
             dateSent: Date.now(),
         }
         saveLetter(dataToSendToAPI)

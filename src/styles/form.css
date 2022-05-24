@@ -5,12 +5,10 @@ ul {
 
 .topic_list {
   display: inline-block;  
-  
 }
 
 .topic_item{ 
   display: inline-block;
-
 }
 
 .button {
@@ -20,4 +18,10 @@ ul {
   color: lightgoldenrodyellow;
   font-size: 1rem;
   border-radius: .5rem;
+}
+
+.posted__letter { 
+  border: 2px dotted #5F9EA0;
+  padding: .5rem;
+  margin: .5rem;
 }
