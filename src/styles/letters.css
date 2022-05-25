@@ -13,7 +13,7 @@ ul {
 
 .button {
   margin: 1rem 0 2rem 2rem;
-  padding: 0.25rem;
+  padding: 0.4rem;
   background-color: #5F9EA0;
   color: lightgoldenrodyellow;
   font-size: 1rem;
@@ -24,4 +24,24 @@ ul {
   border: 2px dotted #5F9EA0;
   padding: .5rem;
   margin: .5rem;
+  background-color: lightblue;
+}
+
+.topics { 
+  display: inline-block;
+  padding: .25rem;
+}
+
+.topic_name { 
+  display: inline-block;
+  margin: 0 .5rem 0 0 ;
+  padding: .5rem;
+  border: 1px solid black;
+  border-radius: 1.5rem;
+  background-color: #673AB7;
+  color: lightgoldenrodyellow;
+}
+
+.date  {
+  font-size: small;
 }

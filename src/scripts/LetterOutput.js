@@ -15,48 +15,37 @@ export const PostedLetters = () => {
             return letter.recipientId === recipient.id
         })
         const topicArr = (letter) => {
-            let topicName = []
+            let topicName = ""
             for (const letterTopic of letter.topicId) {
                 for (const topic of topics) {
-                    if (letterTopic === topic.id)
-                        topicName.push(topic.name)
+                    if (letterTopic === topic.id) {
+                        topicName += `<div class="topic_name">${topic.name} </div>`
+                    }
                 }
             }
-            return topicName.join(", ")
+            return topicName
         }
 
-    
 
-    // const topicList = topics.map((topic) => {
-    //     return letter.topicId === topic.id
-    // })
-
-    // const foundTopic = topics.find((topic) => {
-    //     return letter.topicId === topic.id
-    // })
-
-    let messageHtml = `<li class="posted__letter">`
-
-    messageHtml += `Dear ${foundRecipient.name} (${foundRecipient.email}),<br>`
-
-    messageHtml += `${letter.message} <br>`
-
-    messageHtml += `Sincerely, ${foundAuthor.name} (${foundAuthor.email})<br>`
+    let messageHtml = `<article class="posted__letter">\
+        <div>Dear ${foundRecipient.name} (${foundRecipient.email}),</div><br>
+        <div>${letter.message}</div><br>
+        <div>Sincerely, ${foundAuthor.name} (${foundAuthor.email})</div><br>`
 
     let today = new Date(letter.dateSent)
     let todayDate = today.toLocaleDateString()
-    messageHtml += `Sent on ${todayDate} <br>`
 
-    messageHtml += `${topicArr(letter)}`
+    messageHtml += `<div class="date">Sent on ${todayDate}</div><br>
+        <div class="topics">${topicArr(letter)}</div>
+    </article>`
 
-    messageHtml += `</li>`
     return messageHtml
 }
 
 
-let html = `<ul>
+let html = `<section>
         ${letters.map(letterHtml).join("")}
-    </ul>`
+    </section>`
 
 return html
 
